@@ -31,7 +31,7 @@ const connectors = [
             description: 'Cyberpunk pipe puzzle on Base',
             url:
               process.env.NEXT_PUBLIC_SITE_URL ??
-              'https://pipe-mania.example',
+              'https://pipe-mania-neon.vercel.app',
             icons: ['/app-icon.jpg'],
           },
         }),

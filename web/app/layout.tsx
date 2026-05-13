@@ -20,7 +20,7 @@ const orbitron = Orbitron({
 });
 
 const baseAppId =
-  process.env.NEXT_PUBLIC_BASE_APP_ID ?? 'pipe-mania-local-dev';
+  process.env.NEXT_PUBLIC_BASE_APP_ID ?? '6a0428d9acef3c7a49b15edf';
 
 export const metadata: Metadata = {
   title: 'Pipe Mania',
