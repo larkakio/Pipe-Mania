@@ -16,6 +16,10 @@ export function getBuilderDataSuffix(): Hex | undefined {
   return Attribution.toDataSuffix({ codes: [code] });
 }
 
+const siteUrl =
+  process.env.NEXT_PUBLIC_SITE_URL ??
+  'https://pipe-mania-neon.vercel.app';
+
 const connectors = [
   injected(),
   baseAccount({
@@ -29,10 +33,8 @@ const connectors = [
           metadata: {
             name: 'Pipe Mania',
             description: 'Cyberpunk pipe puzzle on Base',
-            url:
-              process.env.NEXT_PUBLIC_SITE_URL ??
-              'https://pipe-mania-neon.vercel.app',
-            icons: ['/app-icon.jpg'],
+            url: siteUrl,
+            icons: [`${siteUrl.replace(/\/$/, '')}/app-icon.jpg`],
           },
         }),
       ]
